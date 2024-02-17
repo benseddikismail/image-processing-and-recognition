@@ -61,13 +61,18 @@ Verified that the encryption and decryption were working, and the QR generation 
 
 #### grid.py
 Using matplotlib, this code scans an image and applies a grid overlay with dx and dy pixel spacing. Then, it performs Optical Character Recognition (OCR) on each grid cell to retrieve text using the Pytesseract package. Matplotlib is used to display the altered image with the grid overlay; the grid crossings are indicated by red dots. By uncommenting the print statement, the OCR results can be printed even though they are not shown in the output. We were thinking of using grids to locate the marked answers, question numbers and text in front of questions using the text in grids in the OMR sheet.
+
 <img width = "411" src="https://github.iu.edu/osaudaga/cv_a1_images/blob/main/grid.png">
 
 #### img_seg.py
 When the idea of grid did not work we tried doing image segmentation(marking the marked options by red). If an image is in color, this code reads it and turns it to grayscale. After that, it uses Otsu's thresholding to produce a binary image, and it cleans it up by doing morphological closing and border clearing. After the image has been cleaned, each identified region is labeled, and bounding boxes are created around it using regionprops. Matplotlib is used to display the original image with bounding boxes superimposed, and the number of detected regions is printed. The segmented areas of the image are highlighted by the red bounding boxes.
 
+<img width = "411" src="https://github.iu.edu/osaudaga/cv_a1_images/blob/main/img_seg.png">
+
 #### overlay.py
 We thought of overlaying the OMR marked by student and Blank_form injected with the correct answer. Using this image to grade(in percentage), but we scrapped the idea as it was not required by the question.
+
+<img width = "411" src="https://github.iu.edu/osaudaga/cv_a1_images/blob/main/overlay_result_27.png">
 
 After implementing grids and image segmentation we moved to other method to solve the grading part.
 
@@ -78,7 +83,9 @@ We tried to use a barcode to inject a URL into the barcode after uploading the i
 We tried to extract the information from the barcode(URL) using selenium. It then uses the requests library and PIL (Python Imaging Library) to fetch and display the image from the extracted URL. The code runs the WebDriver in headless mode, meaning it operates without opening a visible browser window. This did not work due to difficulty in retrieving the image so we used QR code.
 
 #### inject.py
-Injecting correct answers into the blank form. This code extracts the right answers for an OMR-based test from a text file and an image of a blank OMR sheet. The correct_bubble function, which uses the question number, response letter, and other parameters to find and fill the correct bubble in black, is then used to mark the correct bubbles on the OMR sheet. After that, the completed OMR sheet is saved as a new image and seen with matplotlib. The code can handle questions with one or more right answers. This method was not upto the mark because the method was
+Injecting correct answers into the blank form. This code extracts the right answers for an OMR-based test from a text file and an image of a blank OMR sheet. The correct_bubble function, which uses the question number, response letter, and other parameters to find and fill the correct bubble in black, is then used to mark the correct bubbles on the OMR sheet. After that, the completed OMR sheet is saved as a new image and seen with matplotlib. The code can handle questions with one or more right answers. This method was not upto the mark because the method was some questions did not overlap.
+
+<img width = "411" src="https://github.iu.edu/osaudaga/cv_a1_images/blob/main/omr_correct_ans_27.png">
 
 
 ## Contributions
