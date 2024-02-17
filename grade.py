@@ -86,15 +86,15 @@ def detect_regions(image):
 
     y_coordinates = sorted(np.array(list(set(coordinates)))[:, 1])
 
-    x = []
+    coordinates = list()
     found, counter = False, 28
-    x.append(start_pos[0] + 595)
+    coordinates.append(start_pos[0] + 595)
     for row in range(start_pos[0], answer_boxes.shape[0]):
         if counter == 0:
             break
         if answer_boxes[row, start_pos[1]] == 255:
             if found:
-                x.append(row + 595)
+                coordinates.append(row + 595)
                 counter -= 1
                 found = False
         else:
@@ -126,7 +126,7 @@ def detect_regions(image):
     region3_im = processed_img[:,column3[0]:column3[1]].astype(float)
     region3 = (region3_edges, region3_im)
 
-    return region1, region2, region3, x
+    return region1, region2, region3, coordinates
 
 
 def extract_segments(question):
