@@ -22,7 +22,6 @@ def extract_qr(injected_form):
     y_coordinate = 0
 
     qr_region = injected_form.crop((x_coordinate, y_coordinate, form_width, 180))
-    qr_region.show()
 
     return qr_region
 
