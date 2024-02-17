@@ -11,6 +11,7 @@ python3 devil_pichu.py example.jpg
 We have achieved this through QR code generation. We read the correct answers text file and converted it into a QR code image using the QR code library. We take this image and inject the QR image in the right-most corner of the blank form by first shrinking it into a size 180 x 180. This size was experimented with and was the best to yield results despite any translations/variations the test images might have. This form with the injected QR is something that the students cannot decode to get the hint of correct answers. An example is given as such below :
 
 ![injected_form](https://media.github.iu.edu/user/24623/files/2d711b83-acb8-450e-93fd-d0de31875b8e)
+Library used : qrcode
 
 ### Extraction :
 
@@ -19,6 +20,7 @@ Here is an example of the QR code extracted and the comparison of the ground tru
 
 ![qr_code_ss](https://media.github.iu.edu/user/24623/files/8c8af06b-b0e6-48d9-af01-646a45742f8e)
 ![text_comparison](https://media.github.iu.edu/user/24623/files/b503a489-7a69-41c9-baaa-252d47858637)
+Library used : pyzbar 
 
 ## Experimented methods :
 
@@ -52,5 +54,6 @@ Verified that the encryption and decryption were working, and the QR generation 
 Avishmita :
 * Tried some methods to do the detection.
 * Able to do injection and extraction.
+* Testing locally and on silo (injection & extraction)
 
 
