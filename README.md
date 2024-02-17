@@ -87,6 +87,8 @@ Injecting correct answers into the blank form. This code extracts the right answ
 
 <img width = "411" src="https://github.iu.edu/osaudaga/cv_a1_images/blob/main/omr_correct_ans_27.png">
 
+Even though the injection is not upto the mark but this image works well with overlay.py, to detect crreact answers marked.
+
 
 ## Contributions
 
