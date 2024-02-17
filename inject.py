@@ -46,5 +46,3 @@ if __name__ == "__main__":
 
     injected_file = sys.argv[3]
     form_img.save(injected_file)
-
-    form_img.show()
