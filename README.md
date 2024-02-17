@@ -100,6 +100,7 @@ Ismail:
 Avishmita:
 * Tried some methods to do the detection.
 * Able to do injection and extraction.
+* Coded inject.py, extract.py, avi_exp_inject_extract.py (exp) and avi_exp_devil_pichu.py (exp)
 
 Onkar Saudagar(osaudaga) :
 * Was responsible for trying different methods.
