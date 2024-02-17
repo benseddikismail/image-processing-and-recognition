@@ -61,6 +61,7 @@ Verified that the encryption and decryption were working, and the QR generation 
 
 #### grid.py
 Using matplotlib, this code scans an image and applies a grid overlay with dx and dy pixel spacing. Then, it performs Optical Character Recognition (OCR) on each grid cell to retrieve text using the Pytesseract package. Matplotlib is used to display the altered image with the grid overlay; the grid crossings are indicated by red dots. By uncommenting the print statement, the OCR results can be printed even though they are not shown in the output. We were thinking of using grids to locate the marked answers, question numbers and text in front of questions using the text in grids in the OMR sheet.
+<img width = "411" src="https://github.iu.edu/osaudaga/cv_a1_images/blob/main/grid.png">
 
 #### img_seg.py
 When the idea of grid did not work we tried doing image segmentation(marking the marked options by red). If an image is in color, this code reads it and turns it to grayscale. After that, it uses Otsu's thresholding to produce a binary image, and it cleans it up by doing morphological closing and border clearing. After the image has been cleaned, each identified region is labeled, and bounding boxes are created around it using regionprops. Matplotlib is used to display the original image with bounding boxes superimposed, and the number of detected regions is printed. The segmented areas of the image are highlighted by the red bounding boxes.
