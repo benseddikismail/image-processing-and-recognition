@@ -1,4 +1,4 @@
-# B657 Assignment 1: Image Processing and Recognition Basics
+# Image Processing and Recognition from Scratch
 
 ## Grading
 ```
