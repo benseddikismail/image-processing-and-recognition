@@ -87,22 +87,4 @@ Injecting correct answers into the blank form. This code extracts the right answ
 
 <img width = "411" src="https://github.iu.edu/osaudaga/cv_a1_images/blob/main/omr_correct_ans_27.png">
 
-Even though the injection is not upto the mark but this image works well with overlay.py, to detect crreact answers marked.
-
-
-## Contributions
-
-The assignment was realized on the grounds of great collaborative effort from all teammates.
-
-Ismail:
-* Worked mostly on **grade.py**; extracting answers from an exam sheet to an ouput file.
-
-Avishmita:
-* Tried some methods to do the detection.
-* Able to do injection and extraction.
-* Coded **inject.py**, **extract.py**, avi_exp_inject_extract.py (exp) and avi_exp_devil_pichu.py (exp)
-
-Onkar Saudagar(osaudaga) :
-* Was responsible for trying different methods.
-* Coded grid.py, img_seg.py, barcode_encode.py, barcode_decode.py, overlay.py and inject.py.
-* Helped other team members to complete the code.
+Even though the injection is not upto the mark but this image works well with overlay.py, to detect marked answers.
