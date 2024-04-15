@@ -5,7 +5,7 @@ import sys
 import random
 import numpy as np
 
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 
 def preprocess(image, edges_arr):
