@@ -29,7 +29,7 @@ We have achieved this through QR code generation. We read the correct answers te
 We get the answer form with the answers marked by the students. First, the QR code is extracted, which is straightforward as the QR code is injected with a hardcoded value of the size of the QR. This QR code is now decoded and extracted in an output text file.
 Here is an example of the QR code extracted and the comparison of the ground truth file and the extracted text file from the QR :
 
-<img width="411" alt="detection_ss" src="https://github.com/benseddikismail/image-processing-and-recognition/blob/main/img/qr_code_ss.png">
+<img width="200" alt="detection_ss" src="https://github.com/benseddikismail/image-processing-and-recognition/blob/main/img/qr_code_ss.png">
 <img width="411" alt="detection_ss" src="https://github.com/benseddikismail/image-processing-and-recognition/blob/main/img/text_comparison.png">
 
 ### Experimented methods
