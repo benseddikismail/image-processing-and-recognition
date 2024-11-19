@@ -22,15 +22,15 @@ As the current solution is tailored to a particular type of exam sheets resembli
 
 We have achieved this through QR code generation. We read the correct answers text file and converted it into a QR code image using the QR code library. We take this image and inject the QR image in the right-most corner of the blank form by first shrinking it into a size 180 x 180. This size was experimented with and was the best to yield results despite any translations/variations the test images might have. This form with the injected QR is something that the students cannot decode to get the hint of correct answers. An example is given as such below :
 
-![injected_form](https://media.github.iu.edu/user/24623/files/2d711b83-acb8-450e-93fd-d0de31875b8e)
+![injected_form](https://github.com/benseddikismail/image-processing-and-recognition/blob/main/img/injected_form.png)
 
 ### Extraction
 
 We get the answer form with the answers marked by the students. First, the QR code is extracted, which is straightforward as the QR code is injected with a hardcoded value of the size of the QR. This QR code is now decoded and extracted in an output text file.
 Here is an example of the QR code extracted and the comparison of the ground truth file and the extracted text file from the QR :
 
-![qr_code_ss](https://media.github.iu.edu/user/24623/files/8c8af06b-b0e6-48d9-af01-646a45742f8e)
-![text_comparison](https://media.github.iu.edu/user/24623/files/b503a489-7a69-41c9-baaa-252d47858637)
+![qr_code_ss](https://github.com/benseddikismail/image-processing-and-recognition/blob/main/img/qr_code_ss.png)
+![text_comparison](https://github.com/benseddikismail/image-processing-and-recognition/blob/main/img/text_comparison.png)
 
 ### Experimented methods
 
