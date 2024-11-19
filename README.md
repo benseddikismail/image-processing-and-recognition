@@ -45,7 +45,7 @@ Used contour detection using PIL library to get the contours and formed sort of 
 
 Sample Image as follows :
 
-<img width="411" alt="detection_ss" src="https://media.github.iu.edu/user/24623/files/2f9232f6-9a5e-4fac-a277-b2474dc6b10e">
+<img width="411" alt="detection_ss" src="https://github.com/benseddikismail/image-processing-and-recognition/blob/main/img/detection_ss.png">
 
 ### Injection & Extraction: (avi_exp_inject_extract.py)
 
